@@ -1,6 +1,6 @@
 {
     "id": "php-postgres",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "PHP and PostgreSQL",
     "description": "Develop PHP based applications. Includes needed tools, extensions, and dependencies.",
     "documentationURL": "https://github.com/kmpm/my-devcontainers/tree/main/src/php-postgres",
