@@ -1,5 +1,5 @@
 {
-    "id": "hello",
+    "id": "php-postgres",
     "version": "0.0.1",
     "name": "PHP and PostgreSQL",
     "description": "Develop PHP based applications. Includes needed tools, extensions, and dependencies.",
