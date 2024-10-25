@@ -4,6 +4,7 @@
     "name": "PHP and PostgreSQL",
     "description": "Develop PHP based applications. Includes needed tools, extensions, and dependencies.",
     "documentationURL": "https://github.com/kmpm/my-devcontainers/tree/main/src/php-postgres",
+	"publisher": "@kmpm",
     "licenseURL": "https://github.com/kmpm/my-devcontainers/tree/main/LICENSE",
     "options": {
         "imageVariant": {

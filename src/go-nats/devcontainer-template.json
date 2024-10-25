@@ -3,6 +3,7 @@
     "version": "0.0.2",
     "name": "Go & NATS.io",
     "description": "Use and develop Go + NATS.io. Includes appropriate runtime args, Go, common tools, extensions, and dependencies.",
+	"publisher": "@kmpm",
     "documentationURL": "https://github.com/kmpm/my-devcontainers/tree/main/src/go-nats",
     "licenseURL": "https://github.com/kmpm/my-devcontainers/tree/main/LICENSE",
     "options": {
