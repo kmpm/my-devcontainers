@@ -1,0 +1,35 @@
+{
+    "id": "hello",
+    "version": "0.0.1",
+    "name": "PHP and PostgreSQL",
+    "description": "Develop PHP based applications. Includes needed tools, extensions, and dependencies.",
+    "documentationURL": "https://github.com/kmpm/my-devcontainers/tree/main/src/php-postgres",
+    "licenseURL": "https://github.com/kmpm/my-devcontainers/tree/main/LICENSE",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "PHP version (use -bookworm, -bullseye variants on local arm64/Apple Silicon):",
+            "proposals": [
+                "8-bookworm",
+                "8.2-bookworm",
+                "8.1-bookworm",
+                "8-bullseye",
+                "8.2-bullseye",
+                "8.1-bullseye"
+            ],
+            "default": "8.2-bookworm"
+        },
+        "greeting": {
+            "type": "string",
+            "description": "Select a pre-made greeting, or enter your own",
+            "proposals": [
+                "hey",
+                "hello",
+                "hi",
+                "howdy"
+            ],
+            "default": "hey"
+        }
+    },
+    "platforms": ["PHP"]
+}
