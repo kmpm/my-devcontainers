@@ -6,7 +6,8 @@ FROM mcr.microsoft.com/devcontainers/go:1-${templateOption:imageVariant}
 #     && apt-get install -y <packages> \
 #     && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
-RUN curl -sf https://binaries.nats.dev/nats-io/natscli/nats@latest | sh 
+RUN curl -sf https://binaries.nats.dev/nats-io/natscli/nats@latest | sh \
+    && mv nats /usr/local/bin
 
 
 # [Optional] Uncomment this section to install additional OS packages.
