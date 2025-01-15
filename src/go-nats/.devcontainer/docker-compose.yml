@@ -26,5 +26,4 @@ services:
     #   - ../secrets.env
 
 volumes:
-  postgres-data:
   nats-data:
