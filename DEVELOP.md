@@ -77,5 +77,15 @@ For running the tests locally, you would need to execute the following commands 
 ./.github/actions/smoke-test/test.sh ${TEMPLATE-ID} 
 ```
 
+There is a helper script that you can use instead...
+
+```shell
+# runs the tasks build, test and clean
+./build-test.sh ${TEMPLATE-ID}
+
+# run a single task
+./build-test.sh ${TEMPLATE-ID} <build|test|clean>
+```
+
 Updating Documentation
 This repo contains a GitHub Action workflow that will automatically generate documentation (ie. README.md) for each Template. This file will be auto-generated from the devcontainer-template.json and NOTES.md.
