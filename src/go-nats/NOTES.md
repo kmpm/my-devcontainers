@@ -11,4 +11,5 @@ The nats server is set up with multi tenancy and 2 accounts.
 - `SYS` account is for admin tasks and it has a user `admin` with password `admin`.
 - `APP` account is for other tasks and there is a `guest` user that does not require
   authentication and an `app` user with password `app`
-  
+
+If you need docker-in-docker you could try to add that feature `ghcr.io/devcontainers/features/docker-in-docker:2`
