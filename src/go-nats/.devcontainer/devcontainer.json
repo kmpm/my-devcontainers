@@ -7,7 +7,12 @@
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"./local-features/natscli":{
+			"cliVersion": "latest"
+		},
+		"./local-features/gotools":{}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},
@@ -16,7 +21,7 @@
 	// "forwardPorts": [4222, 8222],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh"
+	// "postCreateCommand": "echo 'command'"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
