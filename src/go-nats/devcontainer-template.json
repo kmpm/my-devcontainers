@@ -3,7 +3,7 @@
     "version": "0.0.3",
     "name": "Go & NATS.io",
     "description": "Use and develop Go + NATS.io. Includes appropriate runtime args, Go, common tools, extensions, and dependencies.",
-	"publisher": "@kmpm",
+    "publisher": "@kmpm",
     "documentationURL": "https://github.com/kmpm/my-devcontainers/tree/main/src/go-nats",
     "licenseURL": "https://github.com/kmpm/my-devcontainers/tree/main/LICENSE",
     "options": {
@@ -12,25 +12,25 @@
             "description": "Go version:",
             "proposals": [
                 "1-bookworm",
-				"1.23-bookworm",
+                "1.23-bookworm",
                 "1.22-bookworm",
                 "1-bullseye",
-				"1.23-bullseye",
+                "1.23-bullseye",
                 "1.22-bullseye"
             ],
             "default": "1.23-bookworm"
         },
-		"natsVariant": {
+        "natsVariant": {
             "type": "string",
             "description": "Version of nats server",
             "proposals": [
-				"latest",
+                "latest",
                 "2-scratch",
-				"2-alpine",
+                "2-alpine",
                 "2.10-scratch",
-				"2.10-alpine",
+                "2.10-alpine",
                 "2",
-				"2.10"
+                "2.10"
             ],
             "default": "2.10"
         }
