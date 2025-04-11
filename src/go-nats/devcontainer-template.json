@@ -1,6 +1,6 @@
 {
     "id": "go-nats",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "name": "Go & NATS.io",
     "description": "Use and develop Go + NATS.io. Includes appropriate runtime args, Go, common tools, extensions, and dependencies.",
     "publisher": "@kmpm",
@@ -18,22 +18,22 @@
                 "1.23-bullseye",
                 "1.24-bullseye"
             ],
-            "default": "1.23-bookworm"
+            "default": "1.24-bookworm"
         },
         "natsVariant": {
             "type": "string",
             "description": "Version of nats server",
             "proposals": [
                 "latest",
-                "2-scratch",
-                "2-alpine",
-                "2.10-scratch",
-                "2.10-alpine",
-				"2.11-scratch",
-				"2.11-alpine",
                 "2",
+                "2-alpine",
+                "2-scratch",
                 "2.10",
-				"2.11"
+                "2.10-alpine",
+                "2.10-scratch",
+				"2.11",
+				"2.11-alpine",
+				"2.11-scratch"
             ],
             "default": "2.11"
         }
