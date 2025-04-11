@@ -8,7 +8,7 @@ Use and develop Go + NATS.io. Includes appropriate runtime args, Go, common tool
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | imageVariant | Go version: | string | 1.23-bookworm |
-| natsVariant | Version of nats server | string | 2.10 |
+| natsVariant | Version of nats server | string | 2.11 |
 
 This template references an image that was [pre-built](https://containers.dev/implementors/reference/#prebuilding) to automatically include needed devcontainer.json metadata.
 
