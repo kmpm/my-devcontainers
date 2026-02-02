@@ -14,7 +14,7 @@ jobs:
           filters: |
             php-postgres: ./**/php-postgres/**
             go-nats: ./**/go-nats/**
-            
+            claude-go-nats: ./**/claude-go-nats/**
 
   test:
     needs: [detect-changes]
