@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/go:1-${templateOption:imageVariant}
+FROM mcr.microsoft.com/devcontainers/go:${templateOption:imageVariant}
 
 ARG TZ
 ENV TZ="$TZ"
