@@ -4,7 +4,9 @@
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"runServices": ["app", "nats"],
-	
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
   "customizations": {
     "vscode": {
       "extensions": [
@@ -42,7 +44,7 @@
     "CLAUDE_CONFIG_DIR": "/home/${localUser}/.claude",
     "POWERLEVEL9K_DISABLE_GITSTATUS": "true"
   },
-  
-  "postStartCommand": "sudo /usr/local/bin/init-firewall.sh",
+  "postCreateCommand": "/usr/local/bin/postCreate.sh",
+  "postStartCommand": "/usr/local/bin/postStart.sh",
   "waitFor": "postStartCommand"
 }

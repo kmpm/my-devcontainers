@@ -10,7 +10,8 @@ check "distro" lsb_release -c
 # check "nsc" nsc --version
 # check "nats-server connection" nats server info --server nats://nats:4222 --user=admin --password=admin | grep -i -s "Version" | awk '{$1=$1};1'
 # check "nats-server system_account" curljq "http://nats:8222/accountz" '.system_account' 
-
+check "claude config" ls -lah ~/.claude
+check "command history" ls -lah /commandhistory/.bash_history
 
 
 # Report result
