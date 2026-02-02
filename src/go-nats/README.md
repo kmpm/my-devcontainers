@@ -7,8 +7,8 @@ Use and develop Go + NATS.io. Includes appropriate runtime args, Go, common tool
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| imageVariant | Go version: | string | 1.23-bookworm |
-| natsVariant | Version of nats server | string | 2.10 |
+| imageVariant | Go version: | string | 1.24-bookworm |
+| natsVariant | Version of nats server | string | 2.11 |
 
 This template references an image that was [pre-built](https://containers.dev/implementors/reference/#prebuilding) to automatically include needed devcontainer.json metadata.
 
@@ -23,6 +23,7 @@ The nats server is set up with multi tenancy and 2 accounts.
 - `SYS` account is for admin tasks and it has a user `admin` with password `admin`.
 - `APP` account is for other tasks and there is a `guest` user that does not require
   authentication and an `app` user with password `app`
+- MQTT is also enabled with a user in the APP account. Username `mqtt`and password `pass`
 
 If you need docker-in-docker you could try to add that feature `ghcr.io/devcontainers/features/docker-in-docker:2`
 
