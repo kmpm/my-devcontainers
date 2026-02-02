@@ -1,0 +1,48 @@
+{
+  "name": "Claude Code with go & NATS",
+	"dockerComposeFile": "compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"runServices": ["app", "nats"],
+	
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        // "dbaeumer.vscode-eslint",
+        // "esbenp.prettier-vscode",
+        "eamodio.gitlens"
+      ],
+      "settings": {
+        // "editor.formatOnSave": true,
+        // "editor.defaultFormatter": "esbenp.prettier-vscode",
+        // "editor.codeActionsOnSave": {
+        //   "source.fixAll.eslint": "explicit"
+        // },
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+          },
+          "zsh": {
+            "path": "zsh"
+          }
+        }
+      }
+    }
+  },
+  // "remoteUser": "${localUser}",
+  // "mounts": [
+  //   "source=claude-code-bashhistory-${devcontainerId},target=/commandhistory,type=volume",
+  //   "source=claude-code-config-${devcontainerId},target=/home/${localUser}/.claude,type=volume"
+  // ],
+  "containerEnv": {
+    "NODE_OPTIONS": "--max-old-space-size=4096",
+    "CLAUDE_CONFIG_DIR": "/home/${localUser}/.claude",
+    "POWERLEVEL9K_DISABLE_GITSTATUS": "true"
+  },
+  
+  "postStartCommand": "sudo /usr/local/bin/init-firewall.sh",
+  "waitFor": "postStartCommand"
+}
