@@ -18,7 +18,7 @@
                 "1.25-bookworm",
                 "1.24-bookworm"
             ],
-            "default": "1.25-trixie"
+            "default": "1-trixie"
         },
         "natsVariant": {
             "type": "string",
