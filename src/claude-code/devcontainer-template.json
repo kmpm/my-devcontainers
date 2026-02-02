@@ -1,0 +1,45 @@
+{
+    "id": "claude-go-nats",
+    "version": "0.0.1",
+    "name": "Claude Code with Go & NATS",
+    "description": "Use and develop Go + NATS.io. Includes appropriate runtime args, Go, common tools, extensions, and dependencies.",
+    "publisher": "@kmpm",
+    "documentationURL": "https://github.com/kmpm/my-devcontainers/tree/main/src/claude-code",
+    "licenseURL": "https://github.com/kmpm/my-devcontainers/tree/main/LICENSE",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "Go version:",
+            "proposals": [
+				"1-trixie",
+				"1.25-trixie",
+				"1.24-trixie",
+                "1-bookworm",
+                "1.25-bookworm",
+                "1.24-bookworm"
+            ],
+            "default": "1.25-trixie"
+        },
+        "natsVariant": {
+            "type": "string",
+            "description": "Version of nats server",
+            "proposals": [
+                "latest",
+                "2",
+                "2-alpine",
+                "2-scratch",
+                "2.10",
+                "2.10-alpine",
+                "2.10-scratch",
+				"2.11",
+				"2.11-alpine",
+				"2.11-scratch"
+            ],
+            "default": "2.11"
+        }
+    },
+    "platforms": ["Go"],
+    "optionalPaths": [
+        ".github/*"
+    ]
+}
